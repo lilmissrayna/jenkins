@@ -1,0 +1,36 @@
+body {
+    padding-top: 90px;
+    color:#1d3557!important;
+    background-color:#e5e5e5!important;
+}
+h1{
+    color:#457b9d!important;
+}
+
+.btn-primary {
+    color:#FFF!important;
+    background-color: #1E325C!important;
+    border-color: #19294D!important;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active{
+    color:#FFF!important;
+    background-color: #14213D!important;
+    border-color: #19294D!important;
+}
+
+.btn, form{
+    margin: 1em;
+}
+
+table.dataTable thead .sorting:after,
+table.dataTable thead .sorting:before,
+table.dataTable thead .sorting_asc:after,
+table.dataTable thead .sorting_asc:before,
+table.dataTable thead .sorting_asc_disabled:after,
+table.dataTable thead .sorting_asc_disabled:before,
+table.dataTable thead .sorting_desc:after,
+table.dataTable thead .sorting_desc:before,
+table.dataTable thead .sorting_desc_disabled:after,
+table.dataTable thead .sorting_desc_disabled:before {
+bottom: .5em;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="reimbursmentCSS.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <title>Expense Reimbursment System</title>
+
+</head>
+
+<body>
+  <div id="nav-bar"></div>
+  <div class="container text-center">
+    <div class="row">
+      <div class="col">
+        <h1 class="display-1">Welcome!</h1>
+      </div>
+    </div>
+    <div class="row justify-content-around">
+      <div class="col">
+        <button id="login-btn" class="btn btn-primary btn-lg">Login</button>
+      </div>
+      <div class="col">
+        <button id="register-btn" class="btn btn-secondary btn-lg">Register</button>
+      </div>
+    </div>
+    <div class="row justify-content-around">
+      <form id="login-form" style="display:block;" action="/authenticate" method="POST">
+        <div class="row">
+          <div class="col col-md-auto text-left">
+            <label for="username" class="form-label h5">Username</label>
+            <input id="username" class="form-control form-control-lg" type="text" name="username" placeholder="Username">
+          </div>
+          <div class="col col-md-auto text-left">
+            <label for="password" class="form-label h5">Password</label>
+            <input id="password" class="form-control form-control-lg" type="text" name="password" placeholder="Password">
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-6">
+            <button id="login-submit" class="btn btn-block btn-success btn-lg">Submit</button>
+          </div>
+        </div>
+      </form>
+      <form id="register-form" style="display:none;">
+        <div class="row">
+          <div class="col col-md-auto text-left">
+            <label for="username" class="form-label h5">Username</label>
+            <input id="register-username" class="form-control form-control-lg" type="text" placeholder="Username">
+          </div>
+          <div class="col col-md-auto text-left">
+            <label for="email" class="form-label h5">Email Address</label>
+            <input id="email" class="form-control form-control-lg" type="text" placeholder="Email Address">
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-6">
+            <button id="register-submit" class="btn btn-block btn-success btn-lg">Submit</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src="indexJS.js"></script>
+</body>
+
+</html>
